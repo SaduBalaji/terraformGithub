@@ -9,4 +9,7 @@ public class TestController {
 	public String getResponse() {
 		return "Hello world";
 	}
-}
+@GetMapping("balu")
+	public String get() {
+		return "terraform use case with github authentication";
+	} }
