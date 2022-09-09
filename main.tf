@@ -50,7 +50,7 @@ resource "aws_instance" "app_server" {
 }
 
 data "aws_security_group" "selected" {
-  name = "balujam"
+  name = "balujam1"
 }
 
 data "aws_key_pair" "example" {
