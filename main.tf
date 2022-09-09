@@ -18,7 +18,7 @@ provider "aws" {
 
 resource "aws_instance" "app_server" {
   count                  = 1
-  ami                    = "ami-076e3a557efe1aa9c"
+  ami                    = "ami-06489866022e12a14"
   instance_type          = "t2.micro"
   key_name               = data.aws_key_pair.example.key_name
   vpc_security_group_ids = [data.aws_security_group.selected.id]
@@ -50,9 +50,9 @@ resource "aws_instance" "app_server" {
 }
 
 data "aws_security_group" "selected" {
-  name = "terraformSecGroup"
+  name = "balujam"
 }
 
 data "aws_key_pair" "example" {
-  key_name           = "newAwsKeyPair"
+  key_name           = "balujam"
 }
