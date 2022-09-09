@@ -15,7 +15,7 @@ public class TestController {
 	}
 	
 	@GetMapping("jam")
-	public String get() {
+	public String getname() {
 		return "karridhana,pandhikukka,karrilu,bangaru,nana,partner,jam,baby,jayashree,pottidhana...";
 	}
 }
