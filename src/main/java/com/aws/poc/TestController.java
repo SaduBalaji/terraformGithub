@@ -7,9 +7,15 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
 	@GetMapping("/")
 	public String getResponse() {
-		return "Hello world";
+		return "welcome balu loves jam";
 	}
 @GetMapping("balu")
 	public String get() {
-		return "terraform use case with github authentication";
-	} }
+		return "i love you jam , i can't explain my happiness while am typing your name...along with i love you ...";
+	}
+	
+	@GetMapping("jam")
+	public String get() {
+		return "karridhana,pandhikukka,karrilu,bangaru,nana,partner,jam,baby,jayashree,pottidhana...";
+	}
+}
