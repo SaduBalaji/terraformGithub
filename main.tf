@@ -18,7 +18,7 @@ provider "aws" {
 
 resource "aws_instance" "app_server" {
   count                  = 1
-  ami                    = "ami-06489866022e12a14"
+  ami                    = "ami-0cca134ec43cf708f"
   instance_type          = "t2.micro"
   key_name               = data.aws_key_pair.example.key_name
   vpc_security_group_ids = [data.aws_security_group.selected.id]
@@ -35,7 +35,7 @@ resource "aws_instance" "app_server" {
     ]
   }
   tags = {
-    Name = "First-Ec2-With-Terraform"
+    Name = "balu instance"
   }
   connection {
     type    = "ssh"
@@ -50,9 +50,9 @@ resource "aws_instance" "app_server" {
 }
 
 data "aws_security_group" "selected" {
-  name = "jamsbalu"
+  name = "balu_security"
 }
 
 data "aws_key_pair" "example" {
-  key_name           = "jamsbalu"
+  key_name           = "balu_key"
 }
