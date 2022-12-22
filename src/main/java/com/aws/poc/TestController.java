@@ -11,11 +11,11 @@ public class TestController {
 	}
 @GetMapping("balu")
 	public String get() {
-		return "i love you , i can't explain my happiness while am typing your name...along with i love you ...";
+		return "Happy new year in advance thanks for launching balu's service";
 	}
 	
 	@GetMapping("balaji")
 	public String getname() {
-		return "gangaaa";
+		return "happy new year in advance ";
 	}
 }
