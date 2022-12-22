@@ -52,7 +52,6 @@ resource "aws_instance" "app_server" {
 data "aws_security_group" "selected" {
   name = "balu_security"
 }
-
 data "aws_key_pair" "example" {
   key_name           = "balu_key"
 }
